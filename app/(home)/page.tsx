@@ -220,10 +220,9 @@ async function getMovies() {
   // console.log('Im fetching!');
   // 프로그램을 멈춰서 느리게 만드는 간단한 트릭 - 로딩 상태를 보기 위해서
   // await new Promise((resolve) => setTimeout(resolve, 1000));
-  // const response = await fetch(URL);
-  // const json = await response.json();
-  // return json;
-  return fetch(API_URL).then((Response) => Response.json());
+  const response = await fetch(API_URL);
+  const json = await response.json();
+  return json;
 }
 
 export default async function HomePage() {
