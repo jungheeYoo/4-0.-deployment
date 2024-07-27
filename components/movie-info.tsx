@@ -51,8 +51,8 @@
 //----------------------------------------------------
 // 4-4
 // Dynamic Metadata
+import { API_URL } from '../app/contants';
 import potato from '../styles/movie-info.module.css';
-import { API_URL } from '../app/(home)/page';
 
 export async function getMovie(id: string) {
   console.log(`Fetching movies: ${Date.now()}`);

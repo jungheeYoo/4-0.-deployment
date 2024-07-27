@@ -44,7 +44,7 @@
 // 4-3
 // Movie Trailers
 
-import { API_URL } from '../app/(home)/page';
+import { API_URL } from '../app/contants';
 import styles from '../styles/movie-videos.module.css';
 
 async function getVideos(id: string) {
